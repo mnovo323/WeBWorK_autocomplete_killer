@@ -3,10 +3,10 @@
     "version": "1.0",
     "description": "Stops the pesky autocomplete on WeBWorK",
     "manifest_version": 2,
-    "permissions": [<all_urls>],
+    "permissions": ["activeTab"],
     "content_scripts": [
 	{
-	    "matches": ["https://webwork.*"],
+	    "matches": ["https://*/*"],
 	    "run_at": "document_idle",
 	    "js": ["ww_script.js"]
 	}
